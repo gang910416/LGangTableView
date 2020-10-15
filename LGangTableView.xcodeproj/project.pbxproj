@@ -14,6 +14,7 @@
 		C2782F7E2538267C0049AA3A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C2782F7D2538267C0049AA3A /* Assets.xcassets */; };
 		C2782F812538267C0049AA3A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C2782F7F2538267C0049AA3A /* LaunchScreen.storyboard */; };
 		C2782F842538267C0049AA3A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C2782F832538267C0049AA3A /* main.m */; };
+		C2782F8D253828FD0049AA3A /* LGTableObject.m in Sources */ = {isa = PBXBuildFile; fileRef = C2782F8C253828FD0049AA3A /* LGTableObject.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +30,8 @@
 		C2782F802538267C0049AA3A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C2782F822538267C0049AA3A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C2782F832538267C0049AA3A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		C2782F8B253828FD0049AA3A /* LGTableObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LGTableObject.h; sourceTree = "<group>"; };
+		C2782F8C253828FD0049AA3A /* LGTableObject.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LGTableObject.m; sourceTree = "<group>"; };
 		DEC189D8BD8268A122A47AD1 /* Pods-LGangTableView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LGangTableView.debug.xcconfig"; path = "Target Support Files/Pods-LGangTableView/Pods-LGangTableView.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -82,6 +85,7 @@
 		C2782F70253826710049AA3A /* LGangTableView */ = {
 			isa = PBXGroup;
 			children = (
+				C2782F8A253828D60049AA3A /* TableViewObject */,
 				C2782F71253826710049AA3A /* AppDelegate.h */,
 				C2782F72253826710049AA3A /* AppDelegate.m */,
 				C2782F77253826710049AA3A /* ViewController.h */,
@@ -93,6 +97,15 @@
 				C2782F832538267C0049AA3A /* main.m */,
 			);
 			path = LGangTableView;
+			sourceTree = "<group>";
+		};
+		C2782F8A253828D60049AA3A /* TableViewObject */ = {
+			isa = PBXGroup;
+			children = (
+				C2782F8B253828FD0049AA3A /* LGTableObject.h */,
+				C2782F8C253828FD0049AA3A /* LGTableObject.m */,
+			);
+			path = TableViewObject;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -191,6 +204,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C2782F8D253828FD0049AA3A /* LGTableObject.m in Sources */,
 				C2782F79253826710049AA3A /* ViewController.m in Sources */,
 				C2782F73253826710049AA3A /* AppDelegate.m in Sources */,
 				C2782F842538267C0049AA3A /* main.m in Sources */,
