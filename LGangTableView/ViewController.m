@@ -25,11 +25,11 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
      self.title = @"示例Demo";
-    //拿到tableView对其进行扩展
-    UIView *headView = [UIView new];
-    headView.backgroundColor = [UIColor lightGrayColor];
-    headView.frame = CGRectMake(0, 0, 100, 80);
-    self.lgTableObject.tableView.tableHeaderView = headView;
+    //设置tableView的headerView
+//    UIView *headView = [UIView new];
+//    headView.backgroundColor = [UIColor lightGrayColor];
+//    headView.frame = CGRectMake(0, 0, 100, 80);
+//    self.lgTableObject.tableView.tableHeaderView = headView;
     
     self.lgTableObject.frame(self.view.bounds).parentView(self.view).rowHeight(50).separatorStyle(UITableViewCellSeparatorStyleSingleLine).dataSource(self.datas).setCellForRow(^(UITableViewCell *  _Nonnull cell, id  _Nonnull model, NSIndexPath * _Nonnull indexPath) {
         cell.textLabel.text = model;
@@ -48,7 +48,7 @@
 #pragma  mark --------------------------- 懒加载 --------------------------
 - (NSArray *)datas {
     if (_datas == nil) {
-        _datas = @[@"简单Api链式调用",@"继承式扩展",];
+        _datas = @[@"链式调用",@"继承式扩展",];
     }
     return _datas;
 }
