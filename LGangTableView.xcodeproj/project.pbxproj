@@ -15,6 +15,16 @@
 		C2782F812538267C0049AA3A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C2782F7F2538267C0049AA3A /* LaunchScreen.storyboard */; };
 		C2782F842538267C0049AA3A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C2782F832538267C0049AA3A /* main.m */; };
 		C2782F8D253828FD0049AA3A /* LGTableObject.m in Sources */ = {isa = PBXBuildFile; fileRef = C2782F8C253828FD0049AA3A /* LGTableObject.m */; };
+		C2782F932539318A0049AA3A /* NomalTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C2782F922539318A0049AA3A /* NomalTableViewController.m */; };
+		C2782F962539319D0049AA3A /* CustemViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C2782F952539319D0049AA3A /* CustemViewController.m */; };
+		C2782F9D253932130049AA3A /* NewsModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C2782F9C253932130049AA3A /* NewsModel.m */; };
+		C2782FA025393C160049AA3A /* NewsTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C2782F9F25393C160049AA3A /* NewsTableViewCell.m */; };
+		C2782FA3253969D90049AA3A /* LGBaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C2782FA2253969D90049AA3A /* LGBaseModel.m */; };
+		C2782FA625396D270049AA3A /* Mnustil.m in Sources */ = {isa = PBXBuildFile; fileRef = C2782FA525396D270049AA3A /* Mnustil.m */; };
+		C2782FA925397A270049AA3A /* NewsTableAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = C2782FA825397A270049AA3A /* NewsTableAdapter.m */; };
+		C2782FAC25397B4F0049AA3A /* PersonModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C2782FAB25397B4F0049AA3A /* PersonModel.m */; };
+		C2782FB125397BC30049AA3A /* ExtendCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C2782FAF25397BC30049AA3A /* ExtendCell.xib */; };
+		C2782FB8253980480049AA3A /* ExtendCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C2782FB7253980480049AA3A /* ExtendCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +42,25 @@
 		C2782F832538267C0049AA3A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		C2782F8B253828FD0049AA3A /* LGTableObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LGTableObject.h; sourceTree = "<group>"; };
 		C2782F8C253828FD0049AA3A /* LGTableObject.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LGTableObject.m; sourceTree = "<group>"; };
+		C2782F912539318A0049AA3A /* NomalTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NomalTableViewController.h; sourceTree = "<group>"; };
+		C2782F922539318A0049AA3A /* NomalTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NomalTableViewController.m; sourceTree = "<group>"; };
+		C2782F942539319D0049AA3A /* CustemViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CustemViewController.h; sourceTree = "<group>"; };
+		C2782F952539319D0049AA3A /* CustemViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CustemViewController.m; sourceTree = "<group>"; };
+		C2782F9B253932130049AA3A /* NewsModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NewsModel.h; sourceTree = "<group>"; };
+		C2782F9C253932130049AA3A /* NewsModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NewsModel.m; sourceTree = "<group>"; };
+		C2782F9E25393C160049AA3A /* NewsTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NewsTableViewCell.h; sourceTree = "<group>"; };
+		C2782F9F25393C160049AA3A /* NewsTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NewsTableViewCell.m; sourceTree = "<group>"; };
+		C2782FA1253969D90049AA3A /* LGBaseModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LGBaseModel.h; sourceTree = "<group>"; };
+		C2782FA2253969D90049AA3A /* LGBaseModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LGBaseModel.m; sourceTree = "<group>"; };
+		C2782FA425396D270049AA3A /* Mnustil.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Mnustil.h; sourceTree = "<group>"; };
+		C2782FA525396D270049AA3A /* Mnustil.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Mnustil.m; sourceTree = "<group>"; };
+		C2782FA725397A270049AA3A /* NewsTableAdapter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NewsTableAdapter.h; sourceTree = "<group>"; };
+		C2782FA825397A270049AA3A /* NewsTableAdapter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NewsTableAdapter.m; sourceTree = "<group>"; };
+		C2782FAA25397B4F0049AA3A /* PersonModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PersonModel.h; sourceTree = "<group>"; };
+		C2782FAB25397B4F0049AA3A /* PersonModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PersonModel.m; sourceTree = "<group>"; };
+		C2782FAD25397BC30049AA3A /* ExtendCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExtendCell.h; sourceTree = "<group>"; };
+		C2782FAF25397BC30049AA3A /* ExtendCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ExtendCell.xib; sourceTree = "<group>"; };
+		C2782FB7253980480049AA3A /* ExtendCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExtendCell.m; sourceTree = "<group>"; };
 		DEC189D8BD8268A122A47AD1 /* Pods-LGangTableView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LGangTableView.debug.xcconfig"; path = "Target Support Files/Pods-LGangTableView/Pods-LGangTableView.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -85,6 +114,9 @@
 		C2782F70253826710049AA3A /* LGangTableView */ = {
 			isa = PBXGroup;
 			children = (
+				C2782FA425396D270049AA3A /* Mnustil.h */,
+				C2782FA525396D270049AA3A /* Mnustil.m */,
+				C2782F8E2539316A0049AA3A /* TestController */,
 				C2782F8A253828D60049AA3A /* TableViewObject */,
 				C2782F71253826710049AA3A /* AppDelegate.h */,
 				C2782F72253826710049AA3A /* AppDelegate.m */,
@@ -106,6 +138,54 @@
 				C2782F8C253828FD0049AA3A /* LGTableObject.m */,
 			);
 			path = TableViewObject;
+			sourceTree = "<group>";
+		};
+		C2782F8E2539316A0049AA3A /* TestController */ = {
+			isa = PBXGroup;
+			children = (
+				C2782F8F2539316A0049AA3A /* Controller */,
+				C2782F9A253931F00049AA3A /* Model */,
+				C2782F902539316A0049AA3A /* view */,
+			);
+			path = TestController;
+			sourceTree = "<group>";
+		};
+		C2782F8F2539316A0049AA3A /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				C2782F912539318A0049AA3A /* NomalTableViewController.h */,
+				C2782F922539318A0049AA3A /* NomalTableViewController.m */,
+				C2782F942539319D0049AA3A /* CustemViewController.h */,
+				C2782F952539319D0049AA3A /* CustemViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		C2782F902539316A0049AA3A /* view */ = {
+			isa = PBXGroup;
+			children = (
+				C2782FAD25397BC30049AA3A /* ExtendCell.h */,
+				C2782FB7253980480049AA3A /* ExtendCell.m */,
+				C2782FAF25397BC30049AA3A /* ExtendCell.xib */,
+				C2782F9E25393C160049AA3A /* NewsTableViewCell.h */,
+				C2782F9F25393C160049AA3A /* NewsTableViewCell.m */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		C2782F9A253931F00049AA3A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C2782F9B253932130049AA3A /* NewsModel.h */,
+				C2782F9C253932130049AA3A /* NewsModel.m */,
+				C2782FA1253969D90049AA3A /* LGBaseModel.h */,
+				C2782FA2253969D90049AA3A /* LGBaseModel.m */,
+				C2782FA725397A270049AA3A /* NewsTableAdapter.h */,
+				C2782FA825397A270049AA3A /* NewsTableAdapter.m */,
+				C2782FAA25397B4F0049AA3A /* PersonModel.h */,
+				C2782FAB25397B4F0049AA3A /* PersonModel.m */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -169,6 +249,7 @@
 				C2782F812538267C0049AA3A /* LaunchScreen.storyboard in Resources */,
 				C2782F7E2538267C0049AA3A /* Assets.xcassets in Resources */,
 				C2782F7C253826710049AA3A /* Main.storyboard in Resources */,
+				C2782FB125397BC30049AA3A /* ExtendCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -204,9 +285,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C2782F932539318A0049AA3A /* NomalTableViewController.m in Sources */,
 				C2782F8D253828FD0049AA3A /* LGTableObject.m in Sources */,
+				C2782FA925397A270049AA3A /* NewsTableAdapter.m in Sources */,
 				C2782F79253826710049AA3A /* ViewController.m in Sources */,
+				C2782F9D253932130049AA3A /* NewsModel.m in Sources */,
+				C2782FA625396D270049AA3A /* Mnustil.m in Sources */,
+				C2782FA3253969D90049AA3A /* LGBaseModel.m in Sources */,
+				C2782FA025393C160049AA3A /* NewsTableViewCell.m in Sources */,
+				C2782F962539319D0049AA3A /* CustemViewController.m in Sources */,
 				C2782F73253826710049AA3A /* AppDelegate.m in Sources */,
+				C2782FB8253980480049AA3A /* ExtendCell.m in Sources */,
+				C2782FAC25397B4F0049AA3A /* PersonModel.m in Sources */,
 				C2782F842538267C0049AA3A /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
