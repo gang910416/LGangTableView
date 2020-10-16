@@ -85,14 +85,12 @@ static NSString *prefix = @"LGCellId";
     if (self.rowsHeight > 0) {
         return self.rowsHeight;
     }else{
-       LGBaseModel *model = [self getSectionDataSource:indexPath.section][indexPath.row];
-        CGFloat height = [model getCellHeight];
-        return height;
+        return UITableViewAutomaticDimension;
     }
 }
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    
-    return [[self getSectionDataSource:section] count];
+    NSArray *array = [self getSectionDataSource:section] ;
+    return [array count];
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
@@ -230,10 +228,10 @@ static NSString *prefix = @"LGCellId";
     UIView *tableHeaderView = [UIView new];
     tableHeaderView.frame = CGRectMake(0, 0, 0, 0.01);
     tableView.tableHeaderView = tableHeaderView;
-    
-    tableView.sectionHeaderHeight = 0.01;
-    tableView.sectionFooterHeight = 0.01;
-    tableView.estimatedRowHeight = 44.0;
+//    
+//    tableView.sectionHeaderHeight = 0.01;
+//    tableView.sectionFooterHeight = 0.01;
+    tableView.estimatedRowHeight = 60.0;
     tableView.rowHeight = UITableViewAutomaticDimension;
     
     

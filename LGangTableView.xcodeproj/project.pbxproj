@@ -25,6 +25,10 @@
 		C2782FAC25397B4F0049AA3A /* PersonModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C2782FAB25397B4F0049AA3A /* PersonModel.m */; };
 		C2782FB125397BC30049AA3A /* ExtendCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C2782FAF25397BC30049AA3A /* ExtendCell.xib */; };
 		C2782FB8253980480049AA3A /* ExtendCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C2782FB7253980480049AA3A /* ExtendCell.m */; };
+		C2782FBC25398DD10049AA3A /* TableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C2782FBA25398DD10049AA3A /* TableViewCell.m */; };
+		C2782FBD25398DD10049AA3A /* TableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C2782FBB25398DD10049AA3A /* TableViewCell.xib */; };
+		C2782FC025398EAE0049AA3A /* LGCellAutoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C2782FBF25398EAE0049AA3A /* LGCellAutoViewController.m */; };
+		C2782FC3253992F80049AA3A /* LGTableGroupViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C2782FC2253992F80049AA3A /* LGTableGroupViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -61,6 +65,13 @@
 		C2782FAD25397BC30049AA3A /* ExtendCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExtendCell.h; sourceTree = "<group>"; };
 		C2782FAF25397BC30049AA3A /* ExtendCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ExtendCell.xib; sourceTree = "<group>"; };
 		C2782FB7253980480049AA3A /* ExtendCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExtendCell.m; sourceTree = "<group>"; };
+		C2782FB925398DD10049AA3A /* TableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TableViewCell.h; sourceTree = "<group>"; };
+		C2782FBA25398DD10049AA3A /* TableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TableViewCell.m; sourceTree = "<group>"; };
+		C2782FBB25398DD10049AA3A /* TableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TableViewCell.xib; sourceTree = "<group>"; };
+		C2782FBE25398EAE0049AA3A /* LGCellAutoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LGCellAutoViewController.h; sourceTree = "<group>"; };
+		C2782FBF25398EAE0049AA3A /* LGCellAutoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LGCellAutoViewController.m; sourceTree = "<group>"; };
+		C2782FC1253992F80049AA3A /* LGTableGroupViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LGTableGroupViewController.h; sourceTree = "<group>"; };
+		C2782FC2253992F80049AA3A /* LGTableGroupViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LGTableGroupViewController.m; sourceTree = "<group>"; };
 		DEC189D8BD8268A122A47AD1 /* Pods-LGangTableView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LGangTableView.debug.xcconfig"; path = "Target Support Files/Pods-LGangTableView/Pods-LGangTableView.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -157,6 +168,10 @@
 				C2782F922539318A0049AA3A /* NomalTableViewController.m */,
 				C2782F942539319D0049AA3A /* CustemViewController.h */,
 				C2782F952539319D0049AA3A /* CustemViewController.m */,
+				C2782FBE25398EAE0049AA3A /* LGCellAutoViewController.h */,
+				C2782FBF25398EAE0049AA3A /* LGCellAutoViewController.m */,
+				C2782FC1253992F80049AA3A /* LGTableGroupViewController.h */,
+				C2782FC2253992F80049AA3A /* LGTableGroupViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -169,6 +184,9 @@
 				C2782FAF25397BC30049AA3A /* ExtendCell.xib */,
 				C2782F9E25393C160049AA3A /* NewsTableViewCell.h */,
 				C2782F9F25393C160049AA3A /* NewsTableViewCell.m */,
+				C2782FB925398DD10049AA3A /* TableViewCell.h */,
+				C2782FBA25398DD10049AA3A /* TableViewCell.m */,
+				C2782FBB25398DD10049AA3A /* TableViewCell.xib */,
 			);
 			path = view;
 			sourceTree = "<group>";
@@ -247,6 +265,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C2782F812538267C0049AA3A /* LaunchScreen.storyboard in Resources */,
+				C2782FBD25398DD10049AA3A /* TableViewCell.xib in Resources */,
 				C2782F7E2538267C0049AA3A /* Assets.xcassets in Resources */,
 				C2782F7C253826710049AA3A /* Main.storyboard in Resources */,
 				C2782FB125397BC30049AA3A /* ExtendCell.xib in Resources */,
@@ -292,11 +311,14 @@
 				C2782F9D253932130049AA3A /* NewsModel.m in Sources */,
 				C2782FA625396D270049AA3A /* Mnustil.m in Sources */,
 				C2782FA3253969D90049AA3A /* LGBaseModel.m in Sources */,
+				C2782FBC25398DD10049AA3A /* TableViewCell.m in Sources */,
 				C2782FA025393C160049AA3A /* NewsTableViewCell.m in Sources */,
 				C2782F962539319D0049AA3A /* CustemViewController.m in Sources */,
 				C2782F73253826710049AA3A /* AppDelegate.m in Sources */,
+				C2782FC025398EAE0049AA3A /* LGCellAutoViewController.m in Sources */,
 				C2782FB8253980480049AA3A /* ExtendCell.m in Sources */,
 				C2782FAC25397B4F0049AA3A /* PersonModel.m in Sources */,
+				C2782FC3253992F80049AA3A /* LGTableGroupViewController.m in Sources */,
 				C2782F842538267C0049AA3A /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

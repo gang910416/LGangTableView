@@ -49,7 +49,7 @@
         p3.hobby = @"爱江山更爱美人";
         p3.info = @"大明朝开国皇帝";
         
-        _datas = @[@[p1],@[p2],@[p3]];
+        _datas = @[@[p1,p3],@[p2],@[p3]];
         
     }
    return _datas;
@@ -57,7 +57,7 @@
 
 - (NewsTableAdapter *)tableObjiect {
     if (_tableObjiect == nil) {
-        //三种创建方式 效果一样 喜欢哪一种自己选择 自动支持xib
+        
         _tableObjiect = (NewsTableAdapter *)NewsTableAdapter.adapterWithCellsName(@[@"ExtendCell"]);
     }
    return _tableObjiect;

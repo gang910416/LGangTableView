@@ -35,7 +35,6 @@ typedef LGTableObject *_Nullable(^TableViewRowHeightBlock)(CGFloat rowHeight);
 // tableView 分割线样式
 typedef LGTableObject *_Nullable(^CellSeparationStyleBlock)(UITableViewCellSeparatorStyle separatorStyle);
 // tableView 的数据源
-
 typedef LGTableObject *_Nonnull(^TableViewDatasBlock)(NSArray *dataSource);
 
 typedef LGTableObject *_Nonnull(^SetCellForRowBlock)(TableViewCellForRowBlock cellForRow);
@@ -43,7 +42,6 @@ typedef LGTableObject *_Nonnull(^SetCellForRowBlock)(TableViewCellForRowBlock ce
 typedef LGTableObject *_Nonnull(^SetSelectCellBlock)(SelectCellBlock selectCell);
 typedef LGTableObject *_Nonnull(^CellPropertyBlock)(NSString *cellProperty);
 typedef LGTableObject *_Nonnull(^SetDidSelectRowBlock)(TableViewDidSelectedRowBlock didSelectRow);
-
 
 
 //设置tableView大小 默认是 CGRectZero
@@ -55,10 +53,10 @@ typedef LGTableObject *_Nonnull(^SetDidSelectRowBlock)(TableViewDidSelectedRowBl
 //设置tableView rowHeight
 @property (nonatomic, assign, readonly) TableViewRowHeightBlock rowHeight;
 
-//设置数据源
+//设置section 的数量
 @property (nonatomic, copy, readonly) TableViewSectionCountBlock count;
 
-//会自动触发刷新tableView
+//设置数据 自动触发刷新tableView
 @property (nonatomic, copy, readonly) TableViewDatasBlock dataSource;
 
 //用于自动给cell传值，如果cellForRow设置过 或 调用setCellForRow,则此设置无效
@@ -67,7 +65,9 @@ typedef LGTableObject *_Nonnull(^SetDidSelectRowBlock)(TableViewDidSelectedRowBl
 
 //针对多种类型的cell，必传
 @property (nonatomic, copy, readonly) SetSelectCellBlock setSelectCell;
+
 @property (nonatomic, copy) SelectCellBlock selectCellBlock;
+
 //设置cellForRow回调
 @property (nonatomic, copy, readonly) SetCellForRowBlock setCellForRow;
 //设置点击cell回调
@@ -96,6 +96,7 @@ typedef LGTableObject *_Nonnull(^SetDidSelectRowBlock)(TableViewDidSelectedRowBl
 //刷新指定列表
 - (void)reloadRowsAtIndexPaths:(NSArray<NSIndexPath *> *)indexPaths withRowAnimation:(UITableViewRowAnimation)animation;
 
+// 初始化tableView 注册cell
 + (LGTableObject *)adapterCellsWithCellClass:(NSArray<Class> *)cellsClass style:(UITableViewStyle)style;
 
 //链式设置属性

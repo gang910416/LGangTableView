@@ -48,13 +48,13 @@
 #pragma  mark --------------------------- 懒加载 --------------------------
 - (NSArray *)datas {
     if (_datas == nil) {
-        _datas = @[@"链式调用",@"继承式扩展",];
+        _datas = @[@"链式调用",@"继承式扩展",@"cell 高度自适应",@"tableView 分组"];
     }
     return _datas;
 }
 - (NSArray *)viewControllers {
     if (_viewControllers == nil) {
-        _viewControllers = @[@"NomalTableViewController",@"CustemViewController"];
+        _viewControllers = @[@"NomalTableViewController",@"CustemViewController",@"LGCellAutoViewController",@"LGTableGroupViewController"];
     }
     return _viewControllers;
 }
