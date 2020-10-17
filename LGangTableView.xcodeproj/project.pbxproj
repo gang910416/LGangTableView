@@ -230,6 +230,7 @@
 				C2782F6A253826710049AA3A /* Sources */,
 				C2782F6B253826710049AA3A /* Frameworks */,
 				C2782F6C253826710049AA3A /* Resources */,
+				A2E781FAC85BFA2CAEBE8BB2 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -289,6 +290,23 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		A2E781FAC85BFA2CAEBE8BB2 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-LGangTableView/Pods-LGangTableView-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-LGangTableView/Pods-LGangTableView-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-LGangTableView/Pods-LGangTableView-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		F38964059DB66024CA73C147 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;

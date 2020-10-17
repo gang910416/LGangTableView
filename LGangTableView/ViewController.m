@@ -9,6 +9,7 @@
 #import "ViewController.h"
 #import "LGTableObject.h"
 #import "NomalTableViewController.h"
+#import <MJRefresh/MJRefresh.h>
 @interface ViewController ()
 
 
@@ -30,6 +31,12 @@
 //    headView.backgroundColor = [UIColor lightGrayColor];
 //    headView.frame = CGRectMake(0, 0, 100, 80);
 //    self.lgTableObject.tableView.tableHeaderView = headView;
+    
+    //刷新
+    self.lgTableObject.tableView.mj_header  = [MJRefreshNormalHeader headerWithRefreshingBlock:^{
+        self.lgTableObject.dataSource(@[@"123",@"345"]);
+        [self.lgTableObject.tableView.mj_header endRefreshing];
+    }];
     
     self.lgTableObject.frame(self.view.bounds).parentView(self.view).rowHeight(50).separatorStyle(UITableViewCellSeparatorStyleSingleLine).dataSource(self.datas).setCellForRow(^(UITableViewCell *  _Nonnull cell, id  _Nonnull model, NSIndexPath * _Nonnull indexPath) {
         cell.textLabel.text = model;
