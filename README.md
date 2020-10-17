@@ -1,0 +1,3 @@
+# LGangTableView
+tableView的封装不用再重复的写tableView那些繁琐的代理方法 
+一句代码创造tableView 
