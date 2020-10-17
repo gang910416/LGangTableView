@@ -7,12 +7,12 @@
 //
 
 #import "LGCellAutoViewController.h"
-#import "LGTableObject.h"
+#import "LGTableViewManager.h"
 #import "CellAutoTableViewCell.h"
 #import "CellAutosModel.h"
 @interface LGCellAutoViewController ()
 
-@property (nonatomic, strong) LGTableObject *lgTableObject;
+@property (nonatomic, strong) LGTableViewManager *lgTableObject;
 
 @property (nonatomic, strong) NSArray *datas;
 
@@ -51,9 +51,9 @@
 }
 
 
--(LGTableObject *)lgTableObject{
+-(LGTableViewManager *)lgTableObject{
     if (!_lgTableObject) {
-        _lgTableObject = LGTableObject.adapter(@[[CellAutoTableViewCell class]]);
+        _lgTableObject = LGTableViewManager.adapter(@[[CellAutoTableViewCell class]]);
     }
     return _lgTableObject;
 }

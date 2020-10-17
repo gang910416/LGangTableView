@@ -7,10 +7,10 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "LGTableObject.h"
+#import "LGTableViewManager.h"
 NS_ASSUME_NONNULL_BEGIN
 
-@interface NewsTableAdapter : LGTableObject
+@interface NewsTableAdapter : LGTableViewManager
 
 @end
 

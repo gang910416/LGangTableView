@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -14,7 +14,7 @@
 		C2782F7E2538267C0049AA3A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C2782F7D2538267C0049AA3A /* Assets.xcassets */; };
 		C2782F812538267C0049AA3A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C2782F7F2538267C0049AA3A /* LaunchScreen.storyboard */; };
 		C2782F842538267C0049AA3A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C2782F832538267C0049AA3A /* main.m */; };
-		C2782F8D253828FD0049AA3A /* LGTableObject.m in Sources */ = {isa = PBXBuildFile; fileRef = C2782F8C253828FD0049AA3A /* LGTableObject.m */; };
+		C2782F8D253828FD0049AA3A /* LGTableViewManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C2782F8C253828FD0049AA3A /* LGTableViewManager.m */; };
 		C2782F932539318A0049AA3A /* NomalTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C2782F922539318A0049AA3A /* NomalTableViewController.m */; };
 		C2782F962539319D0049AA3A /* CustemViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C2782F952539319D0049AA3A /* CustemViewController.m */; };
 		C2782F9D253932130049AA3A /* NewsModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C2782F9C253932130049AA3A /* NewsModel.m */; };
@@ -47,8 +47,8 @@
 		C2782F802538267C0049AA3A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C2782F822538267C0049AA3A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C2782F832538267C0049AA3A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		C2782F8B253828FD0049AA3A /* LGTableObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LGTableObject.h; sourceTree = "<group>"; };
-		C2782F8C253828FD0049AA3A /* LGTableObject.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LGTableObject.m; sourceTree = "<group>"; };
+		C2782F8B253828FD0049AA3A /* LGTableViewManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LGTableViewManager.h; sourceTree = "<group>"; };
+		C2782F8C253828FD0049AA3A /* LGTableViewManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LGTableViewManager.m; sourceTree = "<group>"; };
 		C2782F912539318A0049AA3A /* NomalTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NomalTableViewController.h; sourceTree = "<group>"; };
 		C2782F922539318A0049AA3A /* NomalTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NomalTableViewController.m; sourceTree = "<group>"; };
 		C2782F942539319D0049AA3A /* CustemViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CustemViewController.h; sourceTree = "<group>"; };
@@ -153,8 +153,8 @@
 		C2782F8A253828D60049AA3A /* TableViewObject */ = {
 			isa = PBXGroup;
 			children = (
-				C2782F8B253828FD0049AA3A /* LGTableObject.h */,
-				C2782F8C253828FD0049AA3A /* LGTableObject.m */,
+				C2782F8B253828FD0049AA3A /* LGTableViewManager.h */,
+				C2782F8C253828FD0049AA3A /* LGTableViewManager.m */,
 			);
 			path = TableViewObject;
 			sourceTree = "<group>";
@@ -338,7 +338,7 @@
 			files = (
 				C2782F932539318A0049AA3A /* NomalTableViewController.m in Sources */,
 				C2782FC7253A81390049AA3A /* CellAutoTableViewCell.m in Sources */,
-				C2782F8D253828FD0049AA3A /* LGTableObject.m in Sources */,
+				C2782F8D253828FD0049AA3A /* LGTableViewManager.m in Sources */,
 				C2782FA925397A270049AA3A /* NewsTableAdapter.m in Sources */,
 				C2782F79253826710049AA3A /* ViewController.m in Sources */,
 				C2782F9D253932130049AA3A /* NewsModel.m in Sources */,

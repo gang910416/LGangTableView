@@ -7,12 +7,12 @@
 //
 
 #import "NomalTableViewController.h"
-#import "LGTableObject.h"
+#import "LGTableViewManager.h"
 #import "NewsModel.h"
 #import "NewsTableViewCell.h"
 
 @interface NomalTableViewController ()
-@property (nonatomic, strong) LGTableObject *tableObject;
+@property (nonatomic, strong) LGTableViewManager *tableObject;
 
 @property (nonatomic, strong) NSArray *datas;
 @end
@@ -50,9 +50,9 @@
     return _datas;
 }
 
--(LGTableObject *)tableObject{
+-(LGTableViewManager *)tableObject{
     if (!_tableObject) {
-        _tableObject = LGTableObject.adapter(@[[NewsTableViewCell class]]);
+        _tableObject = LGTableViewManager.adapter(@[[NewsTableViewCell class]]);
     }
     return _tableObject;
 }

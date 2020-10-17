@@ -6,28 +6,28 @@
 //  Copyright © 2020 liugang. All rights reserved.
 //
 
-#import "LGTableObject.h"
+#import "LGTableViewManager.h"
 #import "LGBaseModel.h"
 static NSString *prefix = @"LGCellId";
 
-@interface LGTableObject ()
+@interface LGTableViewManager ()
 //cell标识符前缀
 @property (nonatomic, copy) NSString *cellProps;
 @property (nonatomic, assign) CGFloat rowsHeight;
 @end
 
-@implementation LGTableObject
+@implementation LGTableViewManager
 
-+ (LGTableObject *)adapterCellsWithCellClass:(NSArray<Class> *)cellsClass style:(UITableViewStyle)style{
++ (LGTableViewManager *)adapterCellsWithCellClass:(NSArray<Class> *)cellsClass style:(UITableViewStyle)style{
     UITableView *tableview = [self getTableView:style];
     return [self adapterWithTableView:tableview cellsClass:cellsClass];
 }
 
-+ (LGTableObject *)adapterWithTableView:(UITableView *)tableView  cellsClass:(NSArray<Class> *)cellsClass{
++ (LGTableViewManager *)adapterWithTableView:(UITableView *)tableView  cellsClass:(NSArray<Class> *)cellsClass{
     
     NSAssert([tableView isKindOfClass:[UITableView class]], @"tableView 必须是UITableView的子类");
     
-    LGTableObject *adapter = [self new];
+    LGTableViewManager *adapter = [self new];
     adapter.sectionCount = 1;
     
     tableView.delegate = adapter;
@@ -59,14 +59,14 @@ static NSString *prefix = @"LGCellId";
     
 }
 
-+ (LGTableObject *_Nonnull(^)(NSArray<Class>  * cellsClass))adapter{
-    return ^LGTableObject *(NSArray<Class>  * cellsClass) {
++ (LGTableViewManager *_Nonnull(^)(NSArray<Class>  * cellsClass))adapter{
+    return ^LGTableViewManager *(NSArray<Class>  * cellsClass) {
         return [self adapterCellsWithCellClass:cellsClass style:UITableViewStyleGrouped];
     };
 }
 
-+ (LGTableObject *_Nonnull(^)(NSArray<NSString *> *cellsClassName))adapterWithCellsName{
-    return ^LGTableObject *(NSArray<NSString *> *cellsClassName) {
++ (LGTableViewManager *_Nonnull(^)(NSArray<NSString *> *cellsClassName))adapterWithCellsName{
+    return ^LGTableViewManager *(NSArray<NSString *> *cellsClassName) {
         NSMutableArray *classes = [@[] mutableCopy];
         for(int index = 0;index < cellsClassName.count;index++){
             [classes addObject:NSClassFromString(cellsClassName[index])];
@@ -124,7 +124,7 @@ static NSString *prefix = @"LGCellId";
 
 //设置tableView的frame
 - (TableViewFrameBlock)frame{
-    return ^LGTableObject *(CGRect frame){
+    return ^LGTableViewManager *(CGRect frame){
         self.tableView.frame = frame;
         return self;
     };
@@ -132,7 +132,7 @@ static NSString *prefix = @"LGCellId";
 //设置tableView的父控件
 - (ParentViewBlock)parentView{
     
-    return ^LGTableObject *(UIView *parentView){
+    return ^LGTableViewManager *(UIView *parentView){
         [parentView addSubview:self.tableView];
         return self;
     };
@@ -140,7 +140,7 @@ static NSString *prefix = @"LGCellId";
 
 // 设置分割线类型
 - (CellSeparationStyleBlock)separatorStyle{
-    return ^LGTableObject *(UITableViewCellSeparatorStyle separatorStyle){
+    return ^LGTableViewManager *(UITableViewCellSeparatorStyle separatorStyle){
         self.tableView.separatorStyle = separatorStyle;
         return self;
     };
@@ -148,21 +148,21 @@ static NSString *prefix = @"LGCellId";
 
 // 设置row 的高度
 - (TableViewRowHeightBlock)rowHeight{
-    return ^LGTableObject *(CGFloat rowHeight){
+    return ^LGTableViewManager *(CGFloat rowHeight){
         self.rowsHeight = rowHeight;
         return self;
     };
 }
 
 - (TableViewSectionCountBlock)count{
-    return ^LGTableObject * (NSInteger sectionCount){
+    return ^LGTableViewManager * (NSInteger sectionCount){
         self.sectionCount = sectionCount;
         return self;
     };
 }
 
 - (TableViewDatasBlock)dataSource{
-    return ^LGTableObject *(NSArray *dataSource){
+    return ^LGTableViewManager *(NSArray *dataSource){
         self.tableViewDatas = dataSource;
         [self.tableView reloadData];
         return self;
@@ -179,7 +179,7 @@ static NSString *prefix = @"LGCellId";
 }
 
 - (CellPropertyBlock)cellProperty{
-    return ^LGTableObject *(NSString *cellProperty){
+    return ^LGTableViewManager *(NSString *cellProperty){
         if (cellProperty && cellProperty.length > 0) {
             cellProperty = [cellProperty stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceCharacterSet]];
         }
@@ -189,21 +189,21 @@ static NSString *prefix = @"LGCellId";
 }
 
 - (SetSelectCellBlock)setSelectCell{
-    return ^LGTableObject *(SelectCellBlock selectCell){
+    return ^LGTableViewManager *(SelectCellBlock selectCell){
         self.selectCellBlock = selectCell;
         return self;
     };
 }
 
 - (SetCellForRowBlock)setCellForRow{
-    return ^LGTableObject *(TableViewCellForRowBlock cellForRow){
+    return ^LGTableViewManager *(TableViewCellForRowBlock cellForRow){
         self.cellForRow = cellForRow;
         return self;
     };
 }
 
 - (SetDidSelectRowBlock)setDidSelectRow{
-    return ^LGTableObject *(TableViewDidSelectedRowBlock didSelectRow){
+    return ^LGTableViewManager *(TableViewDidSelectedRowBlock didSelectRow){
         self.didSelectRow = didSelectRow;
         return self;
     };

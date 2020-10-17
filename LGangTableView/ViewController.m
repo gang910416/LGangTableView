@@ -7,13 +7,13 @@
 //
 
 #import "ViewController.h"
-#import "LGTableObject.h"
+#import "LGTableViewManager.h"
 #import "NomalTableViewController.h"
 #import <MJRefresh/MJRefresh.h>
 @interface ViewController ()
 
 
-@property (nonatomic, strong) LGTableObject *lgTableObject;
+@property (nonatomic, strong) LGTableViewManager *tableManager;
 
 @property (nonatomic, strong) NSArray *datas;
 
@@ -33,12 +33,12 @@
 //    self.lgTableObject.tableView.tableHeaderView = headView;
     
     //刷新
-    self.lgTableObject.tableView.mj_header  = [MJRefreshNormalHeader headerWithRefreshingBlock:^{
-        self.lgTableObject.dataSource(@[@"123",@"345"]);
-        [self.lgTableObject.tableView.mj_header endRefreshing];
+    self.tableManager.tableView.mj_header  = [MJRefreshNormalHeader headerWithRefreshingBlock:^{
+        self.tableManager.dataSource(@[@"123",@"345"]);
+        [self.tableManager.tableView.mj_header endRefreshing];
     }];
     
-    self.lgTableObject.frame(self.view.bounds).parentView(self.view).rowHeight(50).separatorStyle(UITableViewCellSeparatorStyleSingleLine).dataSource(self.datas).setCellForRow(^(UITableViewCell *  _Nonnull cell, id  _Nonnull model, NSIndexPath * _Nonnull indexPath) {
+    self.tableManager.frame(self.view.bounds).parentView(self.view).rowHeight(50).separatorStyle(UITableViewCellSeparatorStyleSingleLine).dataSource(self.datas).setCellForRow(^(UITableViewCell *  _Nonnull cell, id  _Nonnull model, NSIndexPath * _Nonnull indexPath) {
         cell.textLabel.text = model;
     }).setDidSelectRow(^(id  _Nonnull model, NSIndexPath * _Nonnull indexPath) {
          UIViewController *viewController = [NSClassFromString(self.viewControllers[indexPath.row]) new];
@@ -65,11 +65,11 @@
     }
     return _viewControllers;
 }
--(LGTableObject *)lgTableObject{
-    if (!_lgTableObject) {
-        _lgTableObject = [LGTableObject adapterCellsWithCellClass:@[[UITableViewCell class]] style:UITableViewStylePlain];
+-(LGTableViewManager *)tableManager{
+    if (!_tableManager) {
+        _tableManager = [LGTableViewManager adapterCellsWithCellClass:@[[UITableViewCell class]] style:UITableViewStylePlain];
     }
-    return _lgTableObject;
+    return _tableManager;
 }
 
 @end

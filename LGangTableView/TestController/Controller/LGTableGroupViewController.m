@@ -7,11 +7,11 @@
 //
 
 #import "LGTableGroupViewController.h"
-#import "LGTableObject.h"
+#import "LGTableViewManager.h"
 #import "Mnustil.h"
 @interface LGTableGroupViewController ()
 
-@property (nonatomic, strong) LGTableObject *lgTableObject;
+@property (nonatomic, strong) LGTableViewManager *tableManager;
 
 @property (nonatomic, strong) NSArray *datas;
 
@@ -23,7 +23,7 @@
     [super viewDidLoad];
     self.view.backgroundColor = UIColor.whiteColor;
     
-    self.lgTableObject.frame(self.view.bounds).parentView(self.view).rowHeight(50).separatorStyle(UITableViewCellSeparatorStyleSingleLine).count(self.datas.count).dataSource(self.datas).setCellForRow(^(UITableViewCell *  _Nonnull cell, id  _Nonnull model, NSIndexPath * _Nonnull indexPath) {
+    self.tableManager.frame(self.view.bounds).parentView(self.view).rowHeight(50).separatorStyle(UITableViewCellSeparatorStyleSingleLine).count(self.datas.count).dataSource(self.datas).setCellForRow(^(UITableViewCell *  _Nonnull cell, id  _Nonnull model, NSIndexPath * _Nonnull indexPath) {
         cell.textLabel.text = model;
         
         if (indexPath.section == self.datas.count - 1) {
@@ -41,11 +41,11 @@
     return _datas;
 }
 
--(LGTableObject *)lgTableObject{
-    if (!_lgTableObject) {
-        _lgTableObject = [LGTableObject adapterCellsWithCellClass:@[[UITableViewCell class]] style:UITableViewStyleGrouped];
+-(LGTableViewManager *)tableManager{
+    if (!_tableManager) {
+        _tableManager = [LGTableViewManager adapterCellsWithCellClass:@[[UITableViewCell class]] style:UITableViewStyleGrouped];
     }
-    return _lgTableObject;
+    return _tableManager;
 }
 
 
