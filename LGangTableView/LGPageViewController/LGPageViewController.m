@@ -36,7 +36,6 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.title = @"PageViewController";
     [self.view addSubview:self.subTitleView];
     self.subTitleView.frame = CGRectMake(0, 0, self.view.bounds.size.width, 50);
     self.view.backgroundColor = kXMLYBGGray;

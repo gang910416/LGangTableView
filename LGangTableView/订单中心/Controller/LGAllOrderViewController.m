@@ -26,9 +26,6 @@
         NSLog(@"model.title = %@",model.title);
         
     });
-    
-    
-    // Do any additional setup after loading the view.
 }
 - (NSArray *)orderDatas{
     if (_orderDatas == nil) {

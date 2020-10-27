@@ -26,7 +26,7 @@
     self.title = @"订单中心";
     SubTitleConfig *config = [[SubTitleConfig alloc]init];
     config.titleArray = self.subTitleArray;
-    config.fontSize = 14.0;
+    config.fontSize = 16.0;
     config.sel_fontSize = 18.0;
     config.nomalColor = UIColor.grayColor;
     config.selectedColor = UIColor.redColor;
