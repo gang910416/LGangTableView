@@ -8,11 +8,11 @@
 
 
 #import <UIKit/UIKit.h>
-
+#import "SubTitleConfig.h"
 NS_ASSUME_NONNULL_BEGIN
 
 @interface LGPageViewController : UIViewController
-- (instancetype)initWithTitleArray:(NSArray *)titleArray controllers:(NSArray *)controllers;
+- (instancetype)initWithTitleSubTitleConfig:(SubTitleConfig *)config controllers:(NSArray *)controllers;
 @end
 
 NS_ASSUME_NONNULL_END

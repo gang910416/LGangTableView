@@ -9,6 +9,7 @@
 #import "LQOrderCenterViewController.h"
 #import "LGPageViewController.h"
 #import "Masonry.h"
+#import "SubTitleConfig.h"
 @interface LQOrderCenterViewController ()
 
 @property (nonatomic, strong)NSMutableArray *subTitleArray;
@@ -23,7 +24,15 @@
     // Do any additional setup after loading the view.
     self.view.backgroundColor = UIColor.whiteColor;
     self.title = @"订单中心";
-    self.pageVC = [[LGPageViewController alloc]initWithTitleArray:self.subTitleArray controllers:self.childVCName];
+    SubTitleConfig *config = [[SubTitleConfig alloc]init];
+    config.titleArray = self.subTitleArray;
+    config.fontSize = 14.0;
+    config.sel_fontSize = 18.0;
+    config.nomalColor = UIColor.grayColor;
+    config.selectedColor = UIColor.redColor;
+    config.siderWith = 60;
+    
+    self.pageVC = [[LGPageViewController alloc]initWithTitleSubTitleConfig:config controllers:self.childVCName];
      [self addChildViewController:self.pageVC];
      [self.view addSubview:self.pageVC.view];
  //    self.subTitleView.titleArray = self.subTitleArray;

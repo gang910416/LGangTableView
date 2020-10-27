@@ -40,6 +40,7 @@
 		C27831792547B66D0049AA3A /* LQDZhiFuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C27831782547B66D0049AA3A /* LQDZhiFuViewController.m */; };
 		C27831832547C9B40049AA3A /* LGPageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C27831822547C9B40049AA3A /* LGPageViewController.m */; };
 		C27831862547C9C80049AA3A /* SubTitleView.m in Sources */ = {isa = PBXBuildFile; fileRef = C27831842547C9C70049AA3A /* SubTitleView.m */; };
+		C27831892547FCD50049AA3A /* SubTitleConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = C27831882547FCD50049AA3A /* SubTitleConfig.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -103,6 +104,8 @@
 		C27831822547C9B40049AA3A /* LGPageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LGPageViewController.m; sourceTree = "<group>"; };
 		C27831842547C9C70049AA3A /* SubTitleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SubTitleView.m; sourceTree = "<group>"; };
 		C27831852547C9C70049AA3A /* SubTitleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SubTitleView.h; sourceTree = "<group>"; };
+		C27831872547FCD50049AA3A /* SubTitleConfig.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SubTitleConfig.h; sourceTree = "<group>"; };
+		C27831882547FCD50049AA3A /* SubTitleConfig.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SubTitleConfig.m; sourceTree = "<group>"; };
 		DEC189D8BD8268A122A47AD1 /* Pods-LGangTableView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LGangTableView.debug.xcconfig"; path = "Target Support Files/Pods-LGangTableView/Pods-LGangTableView.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -293,6 +296,8 @@
 				C27831822547C9B40049AA3A /* LGPageViewController.m */,
 				C27831852547C9C70049AA3A /* SubTitleView.h */,
 				C27831842547C9C70049AA3A /* SubTitleView.m */,
+				C27831872547FCD50049AA3A /* SubTitleConfig.h */,
+				C27831882547FCD50049AA3A /* SubTitleConfig.m */,
 			);
 			path = LGPageViewController;
 			sourceTree = "<group>";
@@ -416,6 +421,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C2782F932539318A0049AA3A /* NomalTableViewController.m in Sources */,
+				C27831892547FCD50049AA3A /* SubTitleConfig.m in Sources */,
 				C27830C0254670C10049AA3A /* LQOrderCenterViewController.m in Sources */,
 				C2782FC7253A81390049AA3A /* CellAutoTableViewCell.m in Sources */,
 				C27830C7254671060049AA3A /* LQOrderTableViewCell.m in Sources */,

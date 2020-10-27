@@ -25,6 +25,8 @@
 
 @property (nonatomic, strong)UIButton *currentSelectedButton;
 @property (nonatomic, assign) CGFloat titleWidth;//选择按钮的宽度
+@property (nonatomic, assign) CGFloat silderWidth;// 下划线的宽度
+@property (nonatomic, strong) SubTitleConfig *config;
 @end
 
 
@@ -38,17 +40,24 @@
     }
     return self;
 }
-- (void)setTitleArray:(NSMutableArray<NSString *> *)titleArray
-{
-    _titleArray  = titleArray;
+- (void) configSubTitleWith:(SubTitleConfig *)config{
+    self.config = config;
+    self.silderWidth = (config.siderWith > 0)?config.siderWith:30;
+    _titleArray  = config.titleArray;
     [self configSubTitles];
 }
+
+//- (void)setTitleArray:(NSMutableArray<NSString *> *)titleArray
+//{
+//    _titleArray  = titleArray;
+//    [self configSubTitles];
+//}
 
 - (void)configSubTitles
 {
     //1.每一个titleView的宽度
-    CGFloat height = 50;
-     CGFloat width = (kScreenWidth - self.titleArray.count) / 4;
+    CGFloat height = (self.config.height > 0)?self.config.height:50;
+    CGFloat width = (kScreenWidth - self.titleArray.count) / 4;
     self.titleWidth = width;
     self.scrollView = [[UIScrollView alloc]initWithFrame:CGRectMake(0, 0, kScreenWidth, height)];
     self.scrollView.backgroundColor = UIColor.whiteColor;
@@ -69,22 +78,30 @@
         UIButton *btn = [UIButton buttonWithType:UIButtonTypeCustom];
         [btn setTitle:title forState:UIControlStateNormal];
         btn.backgroundColor = UIColor.whiteColor;
-        [btn setTitleColor:kSystemOriginColor forState:UIControlStateSelected];
-        [btn setTitleColor:kSystemBlackColor forState:UIControlStateNormal];
-        [btn setTitleColor:kSystemOriginColor forState:UIControlStateHighlighted | UIControlStateSelected];
+        [btn setTitleColor:(self.config.selectedColor != nil)?self.config.selectedColor:kSystemOriginColor forState:UIControlStateSelected];
+        [btn setTitleColor:(self.config.nomalColor != nil)?self.config.nomalColor:kSystemBlackColor forState:UIControlStateNormal];
+        [btn setTitleColor:(self.config.selectedColor != nil)?self.config.selectedColor:kSystemOriginColor forState:UIControlStateHighlighted | UIControlStateSelected];
         if (index == 0) {
-            btn.frame = CGRectMake(width * index , 0, width, height);
+            btn.frame = CGRectMake(width * index , 0, width, height - 3);
         }else{
-            btn.frame = CGRectMake((width + 0.5) * index + 1 , 0, width, height);
+            btn.frame = CGRectMake((width + 0.5) * index + 1 , 0, width, height - 3);
         }
         btn.tag = index;
-        btn.titleLabel.font = [UIFont systemFontOfSize:18];
+        btn.titleLabel.font = [UIFont systemFontOfSize:(self.config.fontSize > 0)?self.config.fontSize: 16];
         btn.adjustsImageWhenHighlighted = NO;
         [btn addTarget:self action:@selector(subTitleBtnClick:) forControlEvents:UIControlEventTouchUpInside];
         [self.subTitleButtonArray addObject:btn];
         [self.scrollView addSubview:btn];
     }
     
+    [self.scrollView addSubview:self.sliderView];
+    //    self.sliderView.frame = CGRectMake((width - 30)/2, height - 3, 30, 2);
+    [self.sliderView mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.bottom.mas_equalTo(height - 3);
+        make.left.mas_equalTo((width - self.silderWidth)/2);
+        make.width.mas_equalTo(self.silderWidth);
+        make.height.mas_equalTo(2);
+    }];
     UIButton *firstBtn = [self.subTitleButtonArray firstObject];
     [self selectedAtButton:firstBtn isFirstStart:YES];
 }
@@ -100,10 +117,13 @@
     btn.selected = YES;
     self.currentSelectedButton = btn;
     if (btn.tag > 2 ) {
-       [self.scrollView setContentOffset:CGPointMake(self.titleWidth*(btn.tag - 1), 0) animated:YES];
+        [self.scrollView setContentOffset:CGPointMake(self.titleWidth*(btn.tag - 1), 0) animated:YES];
     }else if(btn.tag < 3 && self.scrollView.contentOffset.x > 0){
-         [self.scrollView setContentOffset:CGPointMake(- self.titleWidth*(btn.tag - 2), 0) animated:YES];
+        [self.scrollView setContentOffset:CGPointMake(- self.titleWidth*(btn.tag - 2), 0) animated:YES];
     }
+    [self.sliderView mas_updateConstraints:^(MASConstraintMaker *make) {
+        make.left.equalTo(self.scrollView.mas_left).offset(btn.frame.origin.x + btn.frame.size.width / 2 - self.silderWidth/2);
+    }];
     if (!first) {
         [UIView animateWithDuration:0.25 animations:^{
             [self layoutIfNeeded];
@@ -118,9 +138,11 @@
 {
     for (UIButton *sbtn in self.subTitleButtonArray) {
         if (sbtn == sender) {
+            sbtn.titleLabel.font = [UIFont systemFontOfSize:(self.config.sel_fontSize > 0)?self.config.sel_fontSize: 19];
             continue;
         }
         sbtn.selected = NO;
+        sbtn.titleLabel.font = [UIFont systemFontOfSize:(self.config.fontSize > 0)?self.config.fontSize: 16];
     }
 }
 
@@ -158,15 +180,8 @@
 - (UIView *)sliderView
 {
     if (!_sliderView) {
-        UIView *view = [[UIView alloc] init];
-        view.backgroundColor = kSystemOriginColor;
-        //        [self addSubview:view];
-        //        [view mas_makeConstraints:^(MASConstraintMaker *make) {
-        //            make.size.mas_equalTo(CGSizeMake(30, 2));
-        //            make.bottom.equalTo(self.mas_bottom);
-        //            make.left.equalTo(self.mas_left).offset(5);
-        //        }];
-        _sliderView = view;
+        _sliderView = [[UIView alloc] init];
+        _sliderView.backgroundColor =(self.config.selectedColor != nil)?self.config.selectedColor:kSystemOriginColor;
     }
     return _sliderView;
 }

@@ -19,15 +19,16 @@
 @property (nonatomic, strong)NSMutableArray *controllers;
 @property (nonatomic, strong)NSArray *childVCName;
 @property (nonatomic, weak)UIPageViewController *pageViewController;
+@property (nonatomic, strong) SubTitleConfig *config;
 
 @end
 
 @implementation LGPageViewController
 
-- (instancetype)initWithTitleArray:(NSArray *)titleArray controllers:(NSArray *)controllers{
+- (instancetype)initWithTitleSubTitleConfig:(SubTitleConfig *)config controllers:(NSArray *)controllers{
      self = [super init];
     if (self) {
-        self.subTitleArray = titleArray;
+        self.config = config;
         self.childVCName = controllers;
     }
     return self;
@@ -40,7 +41,7 @@
     self.subTitleView.frame = CGRectMake(0, 0, self.view.bounds.size.width, 50);
     self.view.backgroundColor = kXMLYBGGray;
     self.subTitleView.delegate =self;
-    self.subTitleView.titleArray = [self.subTitleArray mutableCopy];
+    [self.subTitleView configSubTitleWith:self.config];
     [self configSubViews];
 }
 - (void)configSubViews
