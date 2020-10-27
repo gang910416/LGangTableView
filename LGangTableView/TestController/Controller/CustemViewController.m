@@ -23,7 +23,7 @@
     self.view.backgroundColor = UIColor.whiteColor;
     self.tableObjiect.frame(self.view.bounds).parentView(self.view).separatorStyle(UITableViewCellSeparatorStyleSingleLine)
               .rowHeight(80)
-    .count(self.datas.count)
+    .sectionsCount(self.datas.count)
     .dataSource(self.datas);
     // Do any additional setup after loading the view.
 }

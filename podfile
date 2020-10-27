@@ -3,5 +3,5 @@
 target 'LGangTableView' do
     pod 'MJRefresh'
     pod 'Masonry'
-  
+  pod 'TWPageViewController'
 end

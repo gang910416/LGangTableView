@@ -1,20 +1,24 @@
 PODS:
   - Masonry (1.1.0)
   - MJRefresh (3.5.0)
+  - TWPageViewController (0.0.2)
 
 DEPENDENCIES:
   - Masonry
   - MJRefresh
+  - TWPageViewController
 
 SPEC REPOS:
   trunk:
     - Masonry
     - MJRefresh
+    - TWPageViewController
 
 SPEC CHECKSUMS:
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
   MJRefresh: 6afc955813966afb08305477dd7a0d9ad5e79a16
+  TWPageViewController: 9a301b0b9774fb6b1d97e947620580e894d01274
 
-PODFILE CHECKSUM: 616eb646f02385b58e3d84df56d00268f721318f
+PODFILE CHECKSUM: eb95d7b7dd336deeeb7353bc219f05c94cdd7b98
 
 COCOAPODS: 1.9.3

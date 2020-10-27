@@ -32,6 +32,14 @@
 		C2782FC7253A81390049AA3A /* CellAutoTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C2782FC5253A81390049AA3A /* CellAutoTableViewCell.m */; };
 		C2782FC8253A81390049AA3A /* CellAutoTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C2782FC6253A81390049AA3A /* CellAutoTableViewCell.xib */; };
 		C2782FCB253A81570049AA3A /* CellAutosModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C2782FCA253A81570049AA3A /* CellAutosModel.m */; };
+		C27830C0254670C10049AA3A /* LQOrderCenterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C27830BF254670C10049AA3A /* LQOrderCenterViewController.m */; };
+		C27830C3254670E90049AA3A /* OrderListModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C27830C2254670E90049AA3A /* OrderListModel.m */; };
+		C27830C7254671060049AA3A /* LQOrderTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C27830C5254671060049AA3A /* LQOrderTableViewCell.m */; };
+		C27830C8254671060049AA3A /* LQOrderTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C27830C6254671060049AA3A /* LQOrderTableViewCell.xib */; };
+		C27831762547B6500049AA3A /* LGAllOrderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C27831752547B6500049AA3A /* LGAllOrderViewController.m */; };
+		C27831792547B66D0049AA3A /* LQDZhiFuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C27831782547B66D0049AA3A /* LQDZhiFuViewController.m */; };
+		C27831832547C9B40049AA3A /* LGPageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C27831822547C9B40049AA3A /* LGPageViewController.m */; };
+		C27831862547C9C80049AA3A /* SubTitleView.m in Sources */ = {isa = PBXBuildFile; fileRef = C27831842547C9C70049AA3A /* SubTitleView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -80,6 +88,21 @@
 		C2782FC6253A81390049AA3A /* CellAutoTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CellAutoTableViewCell.xib; sourceTree = "<group>"; };
 		C2782FC9253A81570049AA3A /* CellAutosModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CellAutosModel.h; sourceTree = "<group>"; };
 		C2782FCA253A81570049AA3A /* CellAutosModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CellAutosModel.m; sourceTree = "<group>"; };
+		C27830BE254670C10049AA3A /* LQOrderCenterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LQOrderCenterViewController.h; sourceTree = "<group>"; };
+		C27830BF254670C10049AA3A /* LQOrderCenterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LQOrderCenterViewController.m; sourceTree = "<group>"; };
+		C27830C1254670E90049AA3A /* OrderListModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OrderListModel.h; sourceTree = "<group>"; };
+		C27830C2254670E90049AA3A /* OrderListModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OrderListModel.m; sourceTree = "<group>"; };
+		C27830C4254671060049AA3A /* LQOrderTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LQOrderTableViewCell.h; sourceTree = "<group>"; };
+		C27830C5254671060049AA3A /* LQOrderTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LQOrderTableViewCell.m; sourceTree = "<group>"; };
+		C27830C6254671060049AA3A /* LQOrderTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LQOrderTableViewCell.xib; sourceTree = "<group>"; };
+		C27831742547B6500049AA3A /* LGAllOrderViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LGAllOrderViewController.h; sourceTree = "<group>"; };
+		C27831752547B6500049AA3A /* LGAllOrderViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LGAllOrderViewController.m; sourceTree = "<group>"; };
+		C27831772547B66D0049AA3A /* LQDZhiFuViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LQDZhiFuViewController.h; sourceTree = "<group>"; };
+		C27831782547B66D0049AA3A /* LQDZhiFuViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LQDZhiFuViewController.m; sourceTree = "<group>"; };
+		C27831812547C9B30049AA3A /* LGPageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LGPageViewController.h; sourceTree = "<group>"; };
+		C27831822547C9B40049AA3A /* LGPageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LGPageViewController.m; sourceTree = "<group>"; };
+		C27831842547C9C70049AA3A /* SubTitleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SubTitleView.m; sourceTree = "<group>"; };
+		C27831852547C9C70049AA3A /* SubTitleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SubTitleView.h; sourceTree = "<group>"; };
 		DEC189D8BD8268A122A47AD1 /* Pods-LGangTableView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LGangTableView.debug.xcconfig"; path = "Target Support Files/Pods-LGangTableView/Pods-LGangTableView.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -135,6 +158,8 @@
 			children = (
 				C2782FA425396D270049AA3A /* Mnustil.h */,
 				C2782FA525396D270049AA3A /* Mnustil.m */,
+				C278317A2547B77F0049AA3A /* LGPageViewController */,
+				C27830BA2546709E0049AA3A /* 订单中心 */,
 				C2782F8E2539316A0049AA3A /* TestController */,
 				C2782F8A253828D60049AA3A /* TableViewObject */,
 				C2782F71253826710049AA3A /* AppDelegate.h */,
@@ -219,6 +244,59 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		C27830BA2546709E0049AA3A /* 订单中心 */ = {
+			isa = PBXGroup;
+			children = (
+				C27830BB2546709E0049AA3A /* Controller */,
+				C27830BC2546709E0049AA3A /* Model */,
+				C27830BD2546709E0049AA3A /* View */,
+			);
+			path = "订单中心";
+			sourceTree = "<group>";
+		};
+		C27830BB2546709E0049AA3A /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				C27830BE254670C10049AA3A /* LQOrderCenterViewController.h */,
+				C27830BF254670C10049AA3A /* LQOrderCenterViewController.m */,
+				C27831742547B6500049AA3A /* LGAllOrderViewController.h */,
+				C27831752547B6500049AA3A /* LGAllOrderViewController.m */,
+				C27831772547B66D0049AA3A /* LQDZhiFuViewController.h */,
+				C27831782547B66D0049AA3A /* LQDZhiFuViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		C27830BC2546709E0049AA3A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C27830C1254670E90049AA3A /* OrderListModel.h */,
+				C27830C2254670E90049AA3A /* OrderListModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		C27830BD2546709E0049AA3A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C27830C4254671060049AA3A /* LQOrderTableViewCell.h */,
+				C27830C5254671060049AA3A /* LQOrderTableViewCell.m */,
+				C27830C6254671060049AA3A /* LQOrderTableViewCell.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		C278317A2547B77F0049AA3A /* LGPageViewController */ = {
+			isa = PBXGroup;
+			children = (
+				C27831812547C9B30049AA3A /* LGPageViewController.h */,
+				C27831822547C9B40049AA3A /* LGPageViewController.m */,
+				C27831852547C9C70049AA3A /* SubTitleView.h */,
+				C27831842547C9C70049AA3A /* SubTitleView.m */,
+			);
+			path = LGPageViewController;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -279,6 +357,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C2782F812538267C0049AA3A /* LaunchScreen.storyboard in Resources */,
+				C27830C8254671060049AA3A /* LQOrderTableViewCell.xib in Resources */,
 				C2782FBD25398DD10049AA3A /* TableViewCell.xib in Resources */,
 				C2782FC8253A81390049AA3A /* CellAutoTableViewCell.xib in Resources */,
 				C2782F7E2538267C0049AA3A /* Assets.xcassets in Resources */,
@@ -337,11 +416,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				C2782F932539318A0049AA3A /* NomalTableViewController.m in Sources */,
+				C27830C0254670C10049AA3A /* LQOrderCenterViewController.m in Sources */,
 				C2782FC7253A81390049AA3A /* CellAutoTableViewCell.m in Sources */,
+				C27830C7254671060049AA3A /* LQOrderTableViewCell.m in Sources */,
+				C27831792547B66D0049AA3A /* LQDZhiFuViewController.m in Sources */,
 				C2782F8D253828FD0049AA3A /* LGTableViewManager.m in Sources */,
 				C2782FA925397A270049AA3A /* NewsTableAdapter.m in Sources */,
 				C2782F79253826710049AA3A /* ViewController.m in Sources */,
+				C27831832547C9B40049AA3A /* LGPageViewController.m in Sources */,
 				C2782F9D253932130049AA3A /* NewsModel.m in Sources */,
+				C27831762547B6500049AA3A /* LGAllOrderViewController.m in Sources */,
 				C2782FA625396D270049AA3A /* Mnustil.m in Sources */,
 				C2782FA3253969D90049AA3A /* LGBaseModel.m in Sources */,
 				C2782FCB253A81570049AA3A /* CellAutosModel.m in Sources */,
@@ -350,7 +434,9 @@
 				C2782F962539319D0049AA3A /* CustemViewController.m in Sources */,
 				C2782F73253826710049AA3A /* AppDelegate.m in Sources */,
 				C2782FC025398EAE0049AA3A /* LGCellAutoViewController.m in Sources */,
+				C27830C3254670E90049AA3A /* OrderListModel.m in Sources */,
 				C2782FB8253980480049AA3A /* ExtendCell.m in Sources */,
+				C27831862547C9C80049AA3A /* SubTitleView.m in Sources */,
 				C2782FAC25397B4F0049AA3A /* PersonModel.m in Sources */,
 				C2782FC3253992F80049AA3A /* LGTableGroupViewController.m in Sources */,
 				C2782F842538267C0049AA3A /* main.m in Sources */,

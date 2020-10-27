@@ -54,7 +54,7 @@ typedef LGTableViewManager *_Nonnull(^SetDidSelectRowBlock)(TableViewDidSelected
 @property (nonatomic, assign, readonly) TableViewRowHeightBlock rowHeight;
 
 //设置section 的数量
-@property (nonatomic, copy, readonly) TableViewSectionCountBlock count;
+@property (nonatomic, copy, readonly) TableViewSectionCountBlock sectionsCount;
 
 //设置数据 自动触发刷新tableView
 @property (nonatomic, copy, readonly) TableViewDatasBlock dataSource;

@@ -154,7 +154,7 @@ static NSString *prefix = @"LGCellId";
     };
 }
 
-- (TableViewSectionCountBlock)count{
+- (TableViewSectionCountBlock)sectionsCount{
     return ^LGTableViewManager * (NSInteger sectionCount){
         self.sectionCount = sectionCount;
         return self;
