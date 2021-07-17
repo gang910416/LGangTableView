@@ -14,7 +14,7 @@ NS_ASSUME_NONNULL_BEGIN
 // title
 @property (nonatomic, strong) NSMutableArray <NSString *> *titleArray;
 @property (nonatomic, assign) CGFloat height;// 导航的高度
-@property (nonatomic, assign) CGFloat siderWith;// 底部先的宽度
+@property (nonatomic, assign) CGFloat siderWith;// 底部线的宽度
 @property (nonatomic, strong) UIColor *nomalColor; // 导航 按钮默认颜色
 @property (nonatomic, strong) UIColor *selectedColor; // 导航 按钮选中颜色
 @property (nonatomic, assign) CGFloat fontSize; // 导航的按钮字体大小

@@ -138,6 +138,13 @@ static NSString *prefix = @"LGCellId";
     };
 }
 
+- (HeaderViewBlock)headerView{
+    return ^LGTableViewManager *(UIView *headerView){
+        self.tableView.tableHeaderView = headerView;
+        return self;
+    };
+}
+
 // 设置分割线类型
 - (CellSeparationStyleBlock)separatorStyle{
     return ^LGTableViewManager *(UITableViewCellSeparatorStyle separatorStyle){
@@ -220,26 +227,15 @@ static NSString *prefix = @"LGCellId";
 + (UITableView *)getTableView:(UITableViewStyle)style {
     UITableView *tableView = [[UITableView alloc]initWithFrame:CGRectZero style:style];
     tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
-    
     //当没有cell时去掉分界线
     tableView.tableFooterView = [UIView new];
-    
     //兼容iOS11以后的系统在Grouped tableView上移
-    UIView *tableHeaderView = [UIView new];
-    tableHeaderView.frame = CGRectMake(0, 0, 0, 0.01);
-    tableView.tableHeaderView = tableHeaderView;
-//    
-//    tableView.sectionHeaderHeight = 0.01;
-//    tableView.sectionFooterHeight = 0.01;
+//    UIView *tableHeaderView = [UIView new];
+//    tableHeaderView.frame = CGRectMake(0, 0, 0, 0.01);
+//    tableView.tableHeaderView = tableHeaderView;
     tableView.estimatedRowHeight = 60.0;
     tableView.rowHeight = UITableViewAutomaticDimension;
-    
-    
     return tableView;
 }
 
-//- (void)setTableViewDatas:(NSArray *)tableViewDatas{
-//    self.tableViewDatas = tableViewDatas;
-//    [self.tableView reloadData];
-//}
 @end

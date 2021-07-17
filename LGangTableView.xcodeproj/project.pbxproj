@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		642C4172B39CEE7124D0E49C /* libPods-LGangTableView.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B1B23209CF6FA0179CC754C4 /* libPods-LGangTableView.a */; };
+		C2165BA026A17F0200C3A383 /* LGPointViewcontroller.m in Sources */ = {isa = PBXBuildFile; fileRef = C2165B9F26A17F0200C3A383 /* LGPointViewcontroller.m */; };
+		C2165BA526A1844900C3A383 /* PointTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C2165BA326A1844900C3A383 /* PointTableViewCell.m */; };
+		C2165BA626A1844900C3A383 /* PointTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C2165BA426A1844900C3A383 /* PointTableViewCell.xib */; };
+		C2165BAA26A26BBA00C3A383 /* AlterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C2165BA926A26BBA00C3A383 /* AlterViewController.m */; };
 		C2782F73253826710049AA3A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C2782F72253826710049AA3A /* AppDelegate.m */; };
 		C2782F79253826710049AA3A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C2782F78253826710049AA3A /* ViewController.m */; };
 		C2782F7C253826710049AA3A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C2782F7A253826710049AA3A /* Main.storyboard */; };
@@ -41,11 +45,23 @@
 		C27831832547C9B40049AA3A /* LGPageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C27831822547C9B40049AA3A /* LGPageViewController.m */; };
 		C27831862547C9C80049AA3A /* SubTitleView.m in Sources */ = {isa = PBXBuildFile; fileRef = C27831842547C9C70049AA3A /* SubTitleView.m */; };
 		C27831892547FCD50049AA3A /* SubTitleConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = C27831882547FCD50049AA3A /* SubTitleConfig.m */; };
+		C2F8FF8E25620D2100F8962C /* CustemViewC.m in Sources */ = {isa = PBXBuildFile; fileRef = C2F8FF8D25620D2100F8962C /* CustemViewC.m */; };
+		C2F8FFA625621BE700F8962C /* UIViewExt.m in Sources */ = {isa = PBXBuildFile; fileRef = C2F8FF9F25621BE600F8962C /* UIViewExt.m */; };
+		C2F8FFA725621BE700F8962C /* UILabel+Category.m in Sources */ = {isa = PBXBuildFile; fileRef = C2F8FFA025621BE600F8962C /* UILabel+Category.m */; };
+		C2F8FFA825621BE700F8962C /* UIAlertController+Category.m in Sources */ = {isa = PBXBuildFile; fileRef = C2F8FFA325621BE700F8962C /* UIAlertController+Category.m */; };
+		C2F8FFA925621BE700F8962C /* UIButton+Block.m in Sources */ = {isa = PBXBuildFile; fileRef = C2F8FFA425621BE700F8962C /* UIButton+Block.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		081162113572016C0C6FD078 /* Pods-LGangTableView.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LGangTableView.release.xcconfig"; path = "Target Support Files/Pods-LGangTableView/Pods-LGangTableView.release.xcconfig"; sourceTree = "<group>"; };
 		B1B23209CF6FA0179CC754C4 /* libPods-LGangTableView.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-LGangTableView.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C2165B9E26A17F0200C3A383 /* LGPointViewcontroller.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LGPointViewcontroller.h; sourceTree = "<group>"; };
+		C2165B9F26A17F0200C3A383 /* LGPointViewcontroller.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LGPointViewcontroller.m; sourceTree = "<group>"; };
+		C2165BA226A1844900C3A383 /* PointTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PointTableViewCell.h; sourceTree = "<group>"; };
+		C2165BA326A1844900C3A383 /* PointTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PointTableViewCell.m; sourceTree = "<group>"; };
+		C2165BA426A1844900C3A383 /* PointTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PointTableViewCell.xib; sourceTree = "<group>"; };
+		C2165BA826A26BBA00C3A383 /* AlterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AlterViewController.h; sourceTree = "<group>"; };
+		C2165BA926A26BBA00C3A383 /* AlterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AlterViewController.m; sourceTree = "<group>"; };
 		C2782F6E253826710049AA3A /* LGangTableView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LGangTableView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C2782F71253826710049AA3A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		C2782F72253826710049AA3A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -106,6 +122,16 @@
 		C27831852547C9C70049AA3A /* SubTitleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SubTitleView.h; sourceTree = "<group>"; };
 		C27831872547FCD50049AA3A /* SubTitleConfig.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SubTitleConfig.h; sourceTree = "<group>"; };
 		C27831882547FCD50049AA3A /* SubTitleConfig.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SubTitleConfig.m; sourceTree = "<group>"; };
+		C2F8FF8C25620D2100F8962C /* CustemViewC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CustemViewC.h; sourceTree = "<group>"; };
+		C2F8FF8D25620D2100F8962C /* CustemViewC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CustemViewC.m; sourceTree = "<group>"; };
+		C2F8FF9E25621BE600F8962C /* UIViewExt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIViewExt.h; sourceTree = "<group>"; };
+		C2F8FF9F25621BE600F8962C /* UIViewExt.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIViewExt.m; sourceTree = "<group>"; };
+		C2F8FFA025621BE600F8962C /* UILabel+Category.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+Category.m"; sourceTree = "<group>"; };
+		C2F8FFA125621BE700F8962C /* UIButton+Block.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+Block.h"; sourceTree = "<group>"; };
+		C2F8FFA225621BE700F8962C /* UILabel+Category.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UILabel+Category.h"; sourceTree = "<group>"; };
+		C2F8FFA325621BE700F8962C /* UIAlertController+Category.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIAlertController+Category.m"; sourceTree = "<group>"; };
+		C2F8FFA425621BE700F8962C /* UIButton+Block.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+Block.m"; sourceTree = "<group>"; };
+		C2F8FFA525621BE700F8962C /* UIAlertController+Category.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIAlertController+Category.h"; sourceTree = "<group>"; };
 		DEC189D8BD8268A122A47AD1 /* Pods-LGangTableView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LGangTableView.debug.xcconfig"; path = "Target Support Files/Pods-LGangTableView/Pods-LGangTableView.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -165,6 +191,7 @@
 				C27830BA2546709E0049AA3A /* 订单中心 */,
 				C2782F8E2539316A0049AA3A /* TestController */,
 				C2782F8A253828D60049AA3A /* TableViewObject */,
+				C2F8FF9425621A2400F8962C /* Categary */,
 				C2782F71253826710049AA3A /* AppDelegate.h */,
 				C2782F72253826710049AA3A /* AppDelegate.m */,
 				C2782F77253826710049AA3A /* ViewController.h */,
@@ -208,6 +235,12 @@
 				C2782FBF25398EAE0049AA3A /* LGCellAutoViewController.m */,
 				C2782FC1253992F80049AA3A /* LGTableGroupViewController.h */,
 				C2782FC2253992F80049AA3A /* LGTableGroupViewController.m */,
+				C2F8FF8C25620D2100F8962C /* CustemViewC.h */,
+				C2F8FF8D25620D2100F8962C /* CustemViewC.m */,
+				C2165B9E26A17F0200C3A383 /* LGPointViewcontroller.h */,
+				C2165B9F26A17F0200C3A383 /* LGPointViewcontroller.m */,
+				C2165BA826A26BBA00C3A383 /* AlterViewController.h */,
+				C2165BA926A26BBA00C3A383 /* AlterViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -226,6 +259,9 @@
 				C2782FC4253A81390049AA3A /* CellAutoTableViewCell.h */,
 				C2782FC5253A81390049AA3A /* CellAutoTableViewCell.m */,
 				C2782FC6253A81390049AA3A /* CellAutoTableViewCell.xib */,
+				C2165BA226A1844900C3A383 /* PointTableViewCell.h */,
+				C2165BA326A1844900C3A383 /* PointTableViewCell.m */,
+				C2165BA426A1844900C3A383 /* PointTableViewCell.xib */,
 			);
 			path = view;
 			sourceTree = "<group>";
@@ -302,6 +338,21 @@
 			path = LGPageViewController;
 			sourceTree = "<group>";
 		};
+		C2F8FF9425621A2400F8962C /* Categary */ = {
+			isa = PBXGroup;
+			children = (
+				C2F8FFA525621BE700F8962C /* UIAlertController+Category.h */,
+				C2F8FFA325621BE700F8962C /* UIAlertController+Category.m */,
+				C2F8FFA125621BE700F8962C /* UIButton+Block.h */,
+				C2F8FFA425621BE700F8962C /* UIButton+Block.m */,
+				C2F8FFA225621BE700F8962C /* UILabel+Category.h */,
+				C2F8FFA025621BE600F8962C /* UILabel+Category.m */,
+				C2F8FF9E25621BE600F8962C /* UIViewExt.h */,
+				C2F8FF9F25621BE600F8962C /* UIViewExt.m */,
+			);
+			path = Categary;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -365,6 +416,7 @@
 				C27830C8254671060049AA3A /* LQOrderTableViewCell.xib in Resources */,
 				C2782FBD25398DD10049AA3A /* TableViewCell.xib in Resources */,
 				C2782FC8253A81390049AA3A /* CellAutoTableViewCell.xib in Resources */,
+				C2165BA626A1844900C3A383 /* PointTableViewCell.xib in Resources */,
 				C2782F7E2538267C0049AA3A /* Assets.xcassets in Resources */,
 				C2782F7C253826710049AA3A /* Main.storyboard in Resources */,
 				C2782FB125397BC30049AA3A /* ExtendCell.xib in Resources */,
@@ -423,28 +475,36 @@
 				C2782F932539318A0049AA3A /* NomalTableViewController.m in Sources */,
 				C27831892547FCD50049AA3A /* SubTitleConfig.m in Sources */,
 				C27830C0254670C10049AA3A /* LQOrderCenterViewController.m in Sources */,
+				C2165BAA26A26BBA00C3A383 /* AlterViewController.m in Sources */,
 				C2782FC7253A81390049AA3A /* CellAutoTableViewCell.m in Sources */,
 				C27830C7254671060049AA3A /* LQOrderTableViewCell.m in Sources */,
 				C27831792547B66D0049AA3A /* LQDZhiFuViewController.m in Sources */,
 				C2782F8D253828FD0049AA3A /* LGTableViewManager.m in Sources */,
+				C2F8FF8E25620D2100F8962C /* CustemViewC.m in Sources */,
 				C2782FA925397A270049AA3A /* NewsTableAdapter.m in Sources */,
 				C2782F79253826710049AA3A /* ViewController.m in Sources */,
 				C27831832547C9B40049AA3A /* LGPageViewController.m in Sources */,
 				C2782F9D253932130049AA3A /* NewsModel.m in Sources */,
 				C27831762547B6500049AA3A /* LGAllOrderViewController.m in Sources */,
+				C2165BA526A1844900C3A383 /* PointTableViewCell.m in Sources */,
 				C2782FA625396D270049AA3A /* Mnustil.m in Sources */,
+				C2165BA026A17F0200C3A383 /* LGPointViewcontroller.m in Sources */,
 				C2782FA3253969D90049AA3A /* LGBaseModel.m in Sources */,
 				C2782FCB253A81570049AA3A /* CellAutosModel.m in Sources */,
 				C2782FBC25398DD10049AA3A /* TableViewCell.m in Sources */,
 				C2782FA025393C160049AA3A /* NewsTableViewCell.m in Sources */,
 				C2782F962539319D0049AA3A /* CustemViewController.m in Sources */,
+				C2F8FFA625621BE700F8962C /* UIViewExt.m in Sources */,
 				C2782F73253826710049AA3A /* AppDelegate.m in Sources */,
 				C2782FC025398EAE0049AA3A /* LGCellAutoViewController.m in Sources */,
 				C27830C3254670E90049AA3A /* OrderListModel.m in Sources */,
 				C2782FB8253980480049AA3A /* ExtendCell.m in Sources */,
 				C27831862547C9C80049AA3A /* SubTitleView.m in Sources */,
 				C2782FAC25397B4F0049AA3A /* PersonModel.m in Sources */,
+				C2F8FFA925621BE700F8962C /* UIButton+Block.m in Sources */,
 				C2782FC3253992F80049AA3A /* LGTableGroupViewController.m in Sources */,
+				C2F8FFA725621BE700F8962C /* UILabel+Category.m in Sources */,
+				C2F8FFA825621BE700F8962C /* UIAlertController+Category.m in Sources */,
 				C2782F842538267C0049AA3A /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

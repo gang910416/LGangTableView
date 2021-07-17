@@ -27,7 +27,7 @@
     
     self.tableManager.frame(self.view.bounds).parentView(self.view).rowHeight(50).separatorStyle(UITableViewCellSeparatorStyleSingleLine).sectionsCount(self.datas.count).dataSource(self.datas).setCellForRow(^(UITableViewCell *  _Nonnull cell, id  _Nonnull model, NSIndexPath * _Nonnull indexPath) {
         cell.textLabel.text = model;
-        
+
         if (indexPath.section == self.datas.count - 1) {
             cell.textLabel.textAlignment = NSTextAlignmentCenter;
             cell.textLabel.textColor = [Mnustil colorWithHexString:@"FF9393"];
@@ -43,7 +43,7 @@
 
 - (NSArray *)datas {
     if (_datas == nil) {
-        _datas = @[@[@"订单中心",@"关于我们"],@[@"版本信息",@"清除缓存"],@[@"修改密码"],@[@"退出登录"]];
+        _datas = @[@[@"订单中心",@"关于我们"],@[@"版本信息",@"清除缓存"],@[@"修改密码",@"我的钱包",@"地址管理"],@[@"退出登录"]];
     }
     return _datas;
 }

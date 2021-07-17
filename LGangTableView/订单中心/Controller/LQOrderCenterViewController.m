@@ -26,18 +26,19 @@
     self.title = @"订单中心";
     SubTitleConfig *config = [[SubTitleConfig alloc]init];
     config.titleArray = self.subTitleArray;
-    config.fontSize = 16.0;
+    config.fontSize = 14.0;
     config.sel_fontSize = 18.0;
     config.nomalColor = UIColor.grayColor;
     config.selectedColor = UIColor.redColor;
     config.siderWith = 60;
+    config.height = 50;
     
     self.pageVC = [[LGPageViewController alloc]initWithTitleSubTitleConfig:config controllers:self.childVCName];
      [self addChildViewController:self.pageVC];
      [self.view addSubview:self.pageVC.view];
  //    self.subTitleView.titleArray = self.subTitleArray;
      [self.pageVC.view mas_makeConstraints:^(MASConstraintMaker *make) {
-           make.top.mas_equalTo(self.view.mas_top).offset(100);
+           make.top.mas_equalTo(self.view.mas_top).offset(90);
             make.left.mas_equalTo(self.view.mas_left);
             make.right.mas_equalTo(self.view.mas_right);
             make.bottom.equalTo(self.view.mas_bottom);

@@ -3,7 +3,7 @@
 //  LGangTableView
 //
 //  Created by liugang on 2020/10/27.
-//  Copyright © 2020 mibo02. All rights reserved.
+//  Copyright © 2020 liugang. All rights reserved.
 //
 
 #import "LGPageViewController.h"
@@ -37,7 +37,11 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self.view addSubview:self.subTitleView];
-    self.subTitleView.frame = CGRectMake(0, 0, self.view.bounds.size.width, 50);
+    if (self.config.height > 0) {
+        self.subTitleView.frame = CGRectMake(0, 0, self.view.bounds.size.width, self.config.height);
+    }else{
+        self.subTitleView.frame = CGRectMake(0, 0, self.view.bounds.size.width, 45);
+    }
     self.view.backgroundColor = kXMLYBGGray;
     self.subTitleView.delegate =self;
     [self.subTitleView configSubTitleWith:self.config];

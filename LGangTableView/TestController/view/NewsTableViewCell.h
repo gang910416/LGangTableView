@@ -21,6 +21,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (nonatomic, strong) NewsModel *model;
 
+-(void) cellConfigModel:(NewsModel *)model;
+
 @end
 
 NS_ASSUME_NONNULL_END

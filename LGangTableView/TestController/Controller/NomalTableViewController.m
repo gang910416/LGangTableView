@@ -23,9 +23,21 @@
     [super viewDidLoad];
     self.view.backgroundColor = UIColor.whiteColor;
     
+    //第一种
+//    self.tableObject.frame(self.view.bounds).parentView(self.view).separatorStyle(UITableViewCellSeparatorStyleSingleLine).rowHeight(60).dataSource(self.datas).setDidSelectRow(^(NewsModel *  _Nonnull model, NSIndexPath * _Nonnull indexPath) {
+//        NSLog(@"------%@",model.title);
+//    });
+    //第二种
     self.tableObject.frame(self.view.bounds).parentView(self.view).separatorStyle(UITableViewCellSeparatorStyleSingleLine).rowHeight(60).dataSource(self.datas).setDidSelectRow(^(NewsModel *  _Nonnull model, NSIndexPath * _Nonnull indexPath) {
         NSLog(@"------%@",model.title);
+    }).setCellForRow(^(NewsTableViewCell * _Nonnull cell, NewsModel*  _Nonnull model, NSIndexPath * _Nonnull indexPath) {
+        
+        NSLog(@"model = %@ indexPath = %ld",model.title,indexPath.row);
+
+        [cell cellConfigModel:model];
+        
     });
+
     // Do any additional setup after loading the view.
 }
 
@@ -41,10 +53,12 @@
         model2.title = @"火箭队总经理莫雷辞职";
         model2.time = @"2020/10/16 00:19 ";
         model2.content = @"莫雷向球队老板费蒂尔塔提出了辞职的想法。";
+        
         NewsModel *model3 = [NewsModel new];
-               model3.title = @"湖人总冠军";
-               model3.time = @"2020/10/16 06:30";
-               model3.content = @"湖人再一次多的NBA总冠军。";
+        model3.title = @"湖人总冠军";
+        model3.time = @"2020/10/16 06:30";
+        model3.content = @"湖人再一次多的NBA总冠军。";
+        
         _datas = @[model1,model2,model3];
     }
     return _datas;

@@ -25,6 +25,9 @@ typedef LGTableViewManager *_Nonnull(^TableViewFrameBlock)(CGRect frame);
 
 // tableView 的 父控件
 typedef LGTableViewManager *_Nullable(^ParentViewBlock)(UIView *parentView);
+//tableView的 headerView
+typedef LGTableViewManager *_Nullable(^HeaderViewBlock)(UIView *headerView);
+typedef LGTableViewManager *_Nullable(^FooterViewBlock)(UIView *footerView);
 
 // tableView 的section  数量
 typedef LGTableViewManager *_Nullable(^TableViewSectionCountBlock)(NSInteger sectionCount);
@@ -48,6 +51,8 @@ typedef LGTableViewManager *_Nonnull(^SetDidSelectRowBlock)(TableViewDidSelected
 @property (nonatomic, copy, readonly) TableViewFrameBlock frame;
 //设置tableView父View
 @property (nonatomic, copy, readonly) ParentViewBlock parentView;
+@property (nonatomic, copy, readonly) HeaderViewBlock headerView;
+@property (nonatomic, copy, readonly) FooterViewBlock footerView;
 //设置分界线 默认不显示
 @property (nonatomic, assign, readonly) CellSeparationStyleBlock separatorStyle;
 //设置tableView rowHeight
@@ -78,6 +83,7 @@ typedef LGTableViewManager *_Nonnull(^SetDidSelectRowBlock)(TableViewDidSelected
 
 //tableView
 @property (nonatomic, strong) UITableView *tableView;
+
 //数据源 ---- section 个数 默认为1
 @property (nonatomic, assign) NSInteger sectionCount;
 

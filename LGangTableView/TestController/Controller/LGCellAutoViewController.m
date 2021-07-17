@@ -26,8 +26,8 @@
     [super viewDidLoad];
     self.view.backgroundColor = UIColor.whiteColor;
     
-    self.lgTableObject.frame(self.view.bounds).parentView(self.view).separatorStyle(UITableViewCellSeparatorStyleSingleLine).dataSource(self.datas).setDidSelectRow(^(id  _Nonnull model, NSIndexPath * _Nonnull indexPath) {
-        
+    self.lgTableObject.frame(self.view.bounds).parentView(self.view).separatorStyle(UITableViewCellSeparatorStyleSingleLine).dataSource(self.datas).setDidSelectRow(^(CellAutosModel *model, NSIndexPath * _Nonnull indexPath) {
+        NSLog(@"%@",model.title);
     });
     // Do any additional setup after loading the view.
 }

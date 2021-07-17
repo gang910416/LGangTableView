@@ -15,7 +15,7 @@
 
 @property (nonatomic, strong) LGTableViewManager *tableManager;
 
-@property (nonatomic, strong) NSArray *datas;
+@property (nonatomic, strong) NSMutableArray *datas;
 
 @property (nonatomic, strong) NSArray *viewControllers;
 
@@ -34,9 +34,19 @@
     
     //刷新
     self.tableManager.tableView.mj_header  = [MJRefreshNormalHeader headerWithRefreshingBlock:^{
-        self.tableManager.dataSource(@[@"123",@"345"]);
+//        [self.datas addObject:@"NBA 状元"];
+//        [self.datas addObject:@"NBA 状元"];
+//        [self.datas addObject:@"NBA 状元"];
+//        self.tableManager.dataSource(self.datas);
         [self.tableManager.tableView.mj_header endRefreshing];
     }];
+    self.tableManager.tableView.mj_footer = [MJRefreshAutoNormalFooter footerWithRefreshingBlock:^{
+        [self.datas removeLastObject];
+        self.tableManager.dataSource(self.datas);
+        [self.tableManager.tableView.mj_footer endRefreshing];
+    }];
+    
+   
     
     self.tableManager.frame(self.view.bounds).parentView(self.view).rowHeight(50).separatorStyle(UITableViewCellSeparatorStyleSingleLine).dataSource(self.datas).setCellForRow(^(UITableViewCell *  _Nonnull cell, id  _Nonnull model, NSIndexPath * _Nonnull indexPath) {
         cell.textLabel.text = model;
@@ -53,15 +63,15 @@
 
 
 #pragma  mark --------------------------- 懒加载 --------------------------
-- (NSArray *)datas {
+- (NSMutableArray *)datas {
     if (_datas == nil) {
-        _datas = @[@"链式调用",@"继承式扩展",@"cell 高度自适应",@"tableView 分组"];
+        _datas = [NSMutableArray arrayWithObjects:@"链式调用",@"继承式扩展",@"cell 高度自适应",@"tableView 分组", @"常见的控件封装",@"基础点",nil];
     }
     return _datas;
 }
 - (NSArray *)viewControllers {
     if (_viewControllers == nil) {
-        _viewControllers = @[@"NomalTableViewController",@"CustemViewController",@"LGCellAutoViewController",@"LGTableGroupViewController"];
+        _viewControllers = @[@"NomalTableViewController",@"CustemViewController",@"LGCellAutoViewController",@"LGTableGroupViewController",@"CustemViewC",@"LGPointViewcontroller"];
     }
     return _viewControllers;
 }

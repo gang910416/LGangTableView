@@ -31,7 +31,7 @@
 
 - (void)setCellAutosModel:(CellAutosModel *)cellAutosModel{
     self.titleLabel.text = cellAutosModel.title;
-       self.contentLabel.text = cellAutosModel.content;
+    self.contentLabel.text = cellAutosModel.content;
 }
 
 @end

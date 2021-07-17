@@ -50,4 +50,11 @@
     self.contentLabel.frame = CGRectMake( 15,  35,  [UIScreen mainScreen].bounds.size.width - 30, [Mnustil textHeight:model.content font:[UIFont systemFontOfSize:14] width:[UIScreen mainScreen].bounds.size.width  - 30]);
 }
 
+-(void) cellConfigModel:(NewsModel *)model{
+    self.titleLabel.text = model.title;
+    self.timeLabel.text = model.time;
+    self.contentLabel.text = model.content;
+    self.contentLabel.frame = CGRectMake( 15,  35,  [UIScreen mainScreen].bounds.size.width - 30, [Mnustil textHeight:model.content font:[UIFont systemFontOfSize:14] width:[UIScreen mainScreen].bounds.size.width  - 30]);
+}
+
 @end
